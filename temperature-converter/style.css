@@ -1,0 +1,71 @@
+.container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.inputs label,
+.output-area label {
+  color: lightgray;
+  font-size: 12px;
+}
+
+.input-area {
+  display: flex;
+  gap: 15px;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.selections {
+  width: 170px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 7px;
+}
+
+.degree,
+.selections,
+.convert {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid gray;
+}
+
+.convert {
+  margin-top: auto;
+  border-radius: 5%;
+  background: rgb(114, 121, 218);
+  color: white;
+}
+
+.output-area {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.result {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
